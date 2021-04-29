@@ -1,0 +1,43 @@
+<html>
+    <head>  
+        <title>swapping</title>
+        <style>
+            *{
+                text-align: center;
+                font-size: large;
+                font-style: italic;
+                background-image: url("https://images.pexels.com/photos/1061142/pexels-photo-1061142.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+
+            }
+        </style>
+    </head>
+    <body>  
+    
+     <script type="text/javascript">
+        // By value (primitives)
+        let a=10;
+        let b=20;
+        function callbyvalue(a,b){
+            var temp=a;
+            a=b;
+            b=temp;
+        document.write(" value of a "+ a+"and value of b "+b);
+        }
+        var obj={
+            c:10,
+            d:20
+        };
+        function callbyreference(obj){
+            obj.temp = obj.c;
+            obj.c= obj.d;
+            obj.d = obj.temp;
+            document.write("value of c "+ obj.c +" and value of d "+ obj.d);
+        } 
+    </script>
+            
+    <p>Click the following button to see the function in action</p>  
+    <input type = "button" onclick = "callbyvalue(a,b)" value = "Call by value">  <br>
+    <input type = "button" onclick = "callbyreference(obj)"  value = "Call by reference">  
+
+    </body>  
+</html>  
