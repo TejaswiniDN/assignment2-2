@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Swapping of two numbers</title>
+        <style>
+            *{
+                font-style: italic;
+                font-size: large;
+                color: aliceblue;
+                text-align: center;
+                border:none;
+                cursor: pointer;
+            
+                background-image: url('https://images.pexels.com/photos/7477/night-trees-stars.jpg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940');
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Swapping of two numbers </h1><br>
+        <h3>Call By Value:</h3>
+        <input type="button" onclick="fun();" value="callbyvalue">
+
+
+        <p id="first"></p>
+        <p id="second"></p>
+        <p id="demo"></p>
+        <p id="demo1"></p><br>
+        <h3>Call By Reference:</h3>
+        <input type="button" onclick="myfunc();" value="callbyreference">
+        <p id="f1"></p>
+        <p id="f2"></p>
+        <p id="demo2"></p>
+        <p id="demo3"></p>
+
+
+        <script>
+            function fun(){
+                var a= prompt("Enter the first number:", "2");
+                document.getElementById("first").innerHTML = "The first number have enter is:"+ a;
+                var b= prompt("Enter the first number:", "3");
+                document.getElementById("second").innerHTML = "The first number have enter is:"+ b;
+                callbyvalue(a,b);
+                document.getElementById("demo1").innerHTML="The first and second numbers after swapping are " + a + " and " + b;
+
+            }
+        function callbyvalue(a,b){
+            var c=a;
+            a=b;
+            b=c;
+            document.getElementById("demo").innerHTML = "the first number and second number on swapping is "+ a + "and " + b;
+        }
+
+            function myfunc(){
+                var obj = {
+                    x : prompt("enter the first number:","4"),
+                    y: prompt("enter the second number:","5")
+                }
+                document.getElementById("f1").innerHTML = "The first number have enter is:"+ obj.x;
+                document.getElementById("f2").innerHTML = "The first number have enter is:"+ obj.y;
+                callbyreference(obj);
+                document.getElementById("demo3").innerHTML="the first and second number after swapping is " + obj.x + " and " + obj.y;
+
+            }    
+
+            function callbyreference(obj){
+                obj.z= obj.x;
+                obj.x= obj.y;
+                obj.y =obj.z;
+                document.getElementById("demo2").innerHTML="the first and second number on swapping is " + obj.x + " and " + obj.y;
+
+            }
+        
+            
+        </script>
+    </body>
+</html>
