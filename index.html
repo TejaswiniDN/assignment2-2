@@ -47,7 +47,7 @@
             var c=a;
             a=b;
             b=c;
-            document.getElementById("demo").innerHTML = "the first number and second number on swapping is "+ a + "and " + b;
+            document.getElementById("demo").innerHTML = "the first number and second number on swapping are "+ a + "and " + b;
         }
 
             function myfunc(){
@@ -55,10 +55,10 @@
                     x : prompt("enter the first number:","4"),
                     y: prompt("enter the second number:","5")
                 }
-                document.getElementById("f1").innerHTML = "The first number have enter is:"+ obj.x;
-                document.getElementById("f2").innerHTML = "The second number have enter is:"+ obj.y;
+                document.getElementById("f1").innerHTML = "The first number have enter is: "+ obj.x;
+                document.getElementById("f2").innerHTML = "The second number have enter is: "+ obj.y;
                 callbyreference(obj);
-                document.getElementById("demo3").innerHTML="the first and second number after swapping is " + obj.x + " and " + obj.y;
+                document.getElementById("demo3").innerHTML="the first and second number after swapping are " + obj.x + " and " + obj.y;
 
             }    
 
@@ -66,7 +66,7 @@
                 obj.z= obj.x;
                 obj.x= obj.y;
                 obj.y =obj.z;
-                document.getElementById("demo2").innerHTML="the first and second number on swapping is " + obj.x + " and " + obj.y;
+                document.getElementById("demo2").innerHTML="the first and second number on swapping are " + obj.x + " and " + obj.y;
 
             }
         
