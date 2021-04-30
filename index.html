@@ -36,9 +36,9 @@
         <script>
             function fun(){
                 var a= prompt("Enter the first number:", "2");
-                document.getElementById("first").innerHTML = "The first number is:"+ a;
+                document.getElementById("first").innerHTML = "The first number  is:"+ a;
                 var b= prompt("Enter the second number:", "3");
-                document.getElementById("second").innerHTML = "The second number is:"+ b;
+                document.getElementById("second").innerHTML = "The second number  is:"+ b;
                 callbyvalue(a,b);
                 document.getElementById("demo1").innerHTML="The first and second numbers after swapping are " + a + " and " + b;
 
@@ -55,10 +55,10 @@
                     x : prompt("enter the first number:","4"),
                     y: prompt("enter the second number:","5")
                 }
-                document.getElementById("f1").innerHTML = "The first number is: "+ obj.x;
-                document.getElementById("f2").innerHTML = "The second number is: "+ obj.y;
+                document.getElementById("f1").innerHTML = "The first is:"+ obj.x;
+                document.getElementById("f2").innerHTML = "The second  is:"+ obj.y;
                 callbyreference(obj);
-                document.getElementById("demo3").innerHTML="the first and second number after swapping are " + obj.x + " and " + obj.y;
+                document.getElementById("demo3").innerHTML="the first and second number after swapping are" + obj.x + " and " + obj.y;
 
             }    
 
@@ -67,6 +67,7 @@
                 obj.x= obj.y;
                 obj.y =obj.z;
                 document.getElementById("demo2").innerHTML="the first and second number on swapping are " + obj.x + " and " + obj.y;
+
             }
         
             
